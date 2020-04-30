@@ -2,11 +2,16 @@
 $(document).ready(function() {
     hours = ["9am", "10am","11am","12pm","1pm","2pm","3pm","4pm","5pm"];
 
-    // var today = todate(moment().format("MMM Do YY"));
-    // today.attr("id","currentDay");
+    var today = moment().format("MMMM Do YYYY");
+    $("#currentDay").append(today);
+
+    var time = moment().format("H");
+    console.log(time);
+    var timeInt = parseInt(time);
 
     function timeBlocks() {
         for (let i = 0; i < 8; i++) {
+
             var timeBlock = $("<div>");
             $(".container").append(timeBlock);
             timeBlock.attr("class", "row time-block");
@@ -16,6 +21,8 @@ $(document).ready(function() {
             hour.attr("class","hour");
             hour.text(hours[i]);
             
+            // if i< timeInt then its the past so add class past using attr
+
             var textArea = $("<textarea>");
             timeBlock.append(textArea);
             textArea.attr("id","text" + i);
