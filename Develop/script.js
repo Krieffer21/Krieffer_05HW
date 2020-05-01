@@ -6,11 +6,11 @@ $(document).ready(function() {
     $("#currentDay").append(today);
 
     var time = moment().format("H");
-    console.log(time);
-    var timeInt = parseInt(time);
+        console.log(time);
+    var timeInt = parseInt(time) -9;
 
     function timeBlocks() {
-        for (let i = 0; i < 8; i++) {
+        for (let i = 0; i < 9; i++) {
 
             var timeBlock = $("<div>");
             $(".container").append(timeBlock);
@@ -21,21 +21,28 @@ $(document).ready(function() {
             hour.attr("class","hour");
             hour.text(hours[i]);
             
-            // if i< timeInt then its the past so add class past using attr
-
             var textArea = $("<textarea>");
             timeBlock.append(textArea);
             textArea.attr("id","text" + i);
-            textArea.attr("class","description");
+
+            // if i< timeInt then its the past so add class past using attr. or do while loop?
+            
+            if (i < timeInt) { 
+            textArea.attr("class", "description past");
+            } else if (i > timeInt) {
+                textArea.attr("class", "description future");
+            } else {
+                textArea.attr("class", "description present");
+            };
 
             var saveBtn = $("<button>");
             timeBlock.append(saveBtn);
-            saveBtn.attr("class","saveBtn");
+            saveBtn.attr("class","saveBtn far fa-save i:hover");
             saveBtn.attr("id", "save" + i); 
         }
     }
-
     timeBlocks();
+    
 
     for (let i = 0; i < 8; i++) {
         var store = localStorage.getItem("save" + i);
