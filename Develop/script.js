@@ -7,7 +7,7 @@ $(document).ready(function() {
     var today = moment().format("MMMM Do YYYY");
     $("#currentDay").append(today);
 
-    // tracks what the hoir is in millitary time
+    // tracks what the hour is in millitary time
     var time = moment().format("H");
         // logged to show it finds the current hour
         console.log(time);
