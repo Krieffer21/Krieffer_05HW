@@ -14,7 +14,7 @@
 ![alt text](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/ColorCoding.png)
 
 ### Local Storage
- The for loop in the code below checks for any saved local storage. When the save button is clicked, the text content is saved to local storage.
+ The for loop in the code below checks for any saved local storage and retrieves it. When the save button for an individual row is clicked, the text content for that row is saved to local storage.
 
 ![alt text](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/storage.png)
 
