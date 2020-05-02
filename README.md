@@ -9,11 +9,11 @@
 ![alt text](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/DateTime.png)
 
 ### Color Coding 
- The if statment below determines which class to attribute to the text area depending on what the current time is. The color's are for the past present and future.
+ The if statment below determines which class to attribute to the text area depending on what the current time is. The color's are for the past, present, and future.
 
 ![alt text](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/ColorCoding.png)
 
 ### Planner in Action
-  The gif below shows text being entered into different text areas, then being saved and not saved. When the page is refreshed the text that was saved remained, but the text that was not saved is no longer there. I show the console to see that it prints the current hour of the time.
+  The gif below shows text being entered into different text areas, then being saved and not saved. When the page is refreshed the text that was saved remained, but the text that was not saved is no longer there. I show the console to see that it prints the current hour of the time (in military time).
   
 ![](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/DayScheduler.gif)
