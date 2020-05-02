@@ -13,6 +13,11 @@
 
 ![alt text](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/ColorCoding.png)
 
+### Local Storage
+ The for loop in the code below checks for any saved local storage. When the save button is clicked, the text content is saved to local storage.
+
+![alt text](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/storage.png)
+
 ### Planner in Action
   The gif below shows text being entered into different text areas, then being saved and not saved. When the page is refreshed the text that was saved remained, but the text that was not saved is no longer there. I show the console to see that it prints the current hour of the time (in military time).
   
