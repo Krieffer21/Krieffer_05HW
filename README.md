@@ -4,7 +4,7 @@
  This assignment was to create a daily planner application using moment.js that saves events for each hour of the day. Every hour is color coded indicating past, present, and future events. When a saved button is clicked it saves associated text input to local storage so the user can refresh the page and retain their text input.   
 
 ### Date & Time
-  Using moment.js I was able to get the current date and time, and format them as I desired. I used military time to get just the current hour so I could easily make the current hour an integer to match the index of the hours array. 
+  Using moment.js I was able to get the current date and time, and format them as I desired. As shown in the image below I put the business hours shown in the planner in an array. I use the current hour given by moment.js to calculate the index to get the appropriate business hour in the array. I used this to color code the time blocks. 
 
 ![alt text](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/DateTime.png)
 
