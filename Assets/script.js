@@ -49,7 +49,7 @@ $(document).ready(function() {
     }
     timeBlocks();
     
-    // Storing text that was saved to local storage
+    // Retrieving text that was saved to local storage
     for (let i = 0; i < 8; i++) {
         var store = localStorage.getItem("save" + i);
         $("#text" + i).text(store);
