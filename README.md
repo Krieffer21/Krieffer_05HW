@@ -19,6 +19,8 @@
 ![alt text](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/storage.png)
 
 ### Planner in Action
+ Delpoyed app: https://krieffer21.github.io/Krieffer_05HW_WorkDayScheduler/
+ 
   The gif below shows text being entered into different text areas, then being saved and not saved. When the page is refreshed the text that was saved remained, but the text that was not saved is no longer there. I show the console to see that it prints the current hour of the time (in military time).
   
 ![](https://github.com/Krieffer21/Krieffer_05HW/blob/master/Assets/images/DayScheduler.gif)
